@@ -48,9 +48,13 @@ class Facebook {
 	public function get_link_image_id() {
 
 		try {
-			$pl = $this->fb->getPageTabHelper()->getSignedRequest()->getPayload();
-			if(isset($pl['app_data'])) {
-				return $pl['app_data'];
+			$sr = $this->fb->getPageTabHelper()->getSignedRequest();
+
+			if($sr) {
+				$pl = $sr->getPayload();
+				if(isset($pl['app_data'])) {
+					return $pl['app_data'];
+				}
 			}
 
 			return FALSE;
