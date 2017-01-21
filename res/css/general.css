@@ -1,0 +1,251 @@
+@font-face {
+	font-family: BPGNino;
+	src: url('../fonts/bpg_nino_mtavruli_normal.ttf');
+}
+
+.wrapper {
+	position: relative;
+	width: 810px;
+	height: 770px;
+	margin: 0 auto;
+	background: url('../img/bg.jpg');
+	overflow: hidden;
+	background-size: cover;
+	font-family: BPGNino;
+}
+
+.loading, .auth-needed-message, .gallery-loader {
+	text-align: center;
+	font-size: 30px;
+	padding: 0 50px;
+	padding-top: 100px;
+	color: white;
+}
+
+.auth-needed-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.click-here {
+	cursor: pointer;
+	color: #ffa200;
+}
+
+.click-here:hover {
+	text-decoration: underline;
+}
+
+.controls {
+	display: none;
+	text-align: center;
+	padding-top: 122px;
+}
+
+.buttons {
+	padding-top: 250px;
+}
+
+.button {
+	background: #ffa200;
+	border-radius: 10px;
+	padding: 18px 30px 11px 30px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 10px;
+	cursor: pointer;
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+	position: relative;
+	display: inline-block;
+}
+
+.button:hover:not(.success) {
+	top: 1px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tip {
+	position: absolute;
+	bottom: -100px;
+	font-size: 19px;
+	border-radius: 5px;
+	width: 400px;
+	padding: 5px;
+	left: 50%;
+	margin-left: -200px;
+	display: none;
+	background: red;
+	color: white;
+	cursor: pointer;
+	z-index: 2000;
+	text-align: center;
+}
+
+.success {
+	background: #4caf50 !important;
+}
+
+.gallery-container {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	top: 0;
+	left: 0;
+}
+
+.gallery-loader {
+	position: absolute;
+	width: 100%;
+}
+
+.gallery {
+	margin-top: 80px;
+	height: 620px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.my-pic {
+	position: absolute;
+	top: 0;
+	right: 60px;
+	padding: 10px 15px 10px 15px;
+	font-size: 26px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: #ffa200;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.thumb-container {
+	padding: 15px !important;
+	cursor: pointer;
+}
+
+.thumb {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+}
+
+.thumb-name {
+	color: black;
+	font-size: 16px;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	padding-top: 3px;
+}
+
+.no-images {
+	color: white;
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.preview-controls {
+	padding: 0 15px;
+}
+
+.likebox-wrapper, .info-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 200px;
+}
+
+.likebox, .info {
+	position: relative;
+	background: white;
+	padding: 50px;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	font-size: 25px;
+}
+
+.close-likebox, .close-info {
+	position: absolute !important;
+	right: 10px !important;
+	top: 10px !important;
+	font-size: 16px;
+	cursor: pointer;
+	color: #595959;
+}
+
+.info-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.info-wrapper {
+	display: none;
+}
+
+#userfile {
+	/*width: 1px;
+	height: 1px;*/
+	position: absolute;
+	margin-left: -10000px;
+}
+
+#gallery-back-button, #preview-back-button {
+	padding: 15px 25px 8px 25px;
+	padding-left: 15px;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+#preview-wrapper {
+	z-index: 1000;
+	position: absolute;
+	width: 810px;
+	height: 770px;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	font-family: BPGNino;
+	display: none;
+}
+
+#preview {
+	height: 700px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.jspVerticalBar, .jspTrack {
+	background: none !important;
+}
+
+.jspDrag {
+	background: #ffa200 !important;
+}
+
+.gallery-like {
+	float: right;
+	margin-top: 30px;
+	height: 20px;
+	overflow: hidden;
+}
